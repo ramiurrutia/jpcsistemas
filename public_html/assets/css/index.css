@@ -181,6 +181,10 @@ header {
   transition: all 0.3s ease;
 }
 
+.s-div:hover{
+  background-color: #494949;
+}
+
 .s-div h3{
   font-family: 'Montserrat', sans-serif;
   color: #fff;
@@ -196,7 +200,4 @@ header {
   padding: 10px 20px;
 }
 
-.s-div:hover{
-  background-color: #494949;
-  transform: translateY(-10px);
-}
+
