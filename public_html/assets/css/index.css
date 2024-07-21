@@ -156,7 +156,9 @@ header {
 /* servicios */
 #servicios {
   height: 100vh;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -164,23 +166,30 @@ header {
   font-size: 40px;
   font-family: 'Montserrat', sans-serif;
   color: #4b83d8;
-  padding: 50px 0 ;
+  padding: 80px 0 0 0;
 }
 
 .servicios-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, minmax(350px, auto));
   gap: 20px;
-  padding: 0 10%;
+  padding: 50px 10%;
+  width: 100%;
+  max-width: 60vw;
 }
 
 .s-div {
-  min-height: 350px;
   background-color: #444;
   border-radius: 20px;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
 }
 
-.s-div h3{
+.s-div h3 {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
   font-size: 20px;
@@ -194,4 +203,3 @@ header {
   font-weight: 400;
   padding: 10px 20px;
 }
-
