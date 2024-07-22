@@ -85,12 +85,23 @@ header {
 
 /* intro */
 
-.intro {
-  align-content: center;
+#inicio {
+  place-items: center;
+  display: flex;
+  background: rgb(39, 47, 59);
+  justify-content: center;
   height: 100vh;
+}
+
+#inicio img {
+  height: 300px;
+  padding: 50px;
+}
+
+.texto {
+  align-content: center;
   display: grid;
   place-items: center;
-  background: rgb(39, 47, 59);
 }
 .jpch1 {
   font-family: "Montserrat", sans-serif;
@@ -102,12 +113,11 @@ header {
 .jpcdiv {
   box-sizing: content-box;
   display: flex;
-  padding: 10px 10px;
   height: 20px;
 }
 
-.intro p,
-.intro div {
+.texto p,
+.texto div {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: #fff;
