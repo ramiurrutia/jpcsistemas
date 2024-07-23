@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #333;
+  background-color: #eee;
 }
 
 /* header */
@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 10%;
-  background-color: #50505004;
+  background: linear-gradient(#0000001e, #00000000);
   position: fixed;
   width: calc(100% - 20%);
   z-index: 1000;
@@ -30,11 +30,12 @@ header {
 .logo {
   cursor: pointer;
   width: 80px;
-  transition: 0.25s ease-in all 0s;
+  transition: 0.20s ease-in all 0s;
 }
 
 .logo:hover {
-  filter: brightness(50%);
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 
 .navlinks li,
@@ -42,7 +43,7 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
@@ -52,19 +53,19 @@ header {
 
 .navlinks li {
   display: inline-block;
-  padding: 0px 20px;
 }
 
 .navlinks li a {
   transition: all 0.25s ease;
+  padding: 20px;
 }
 
 .navlinks li a:hover {
-  color: #4b83d8;
+  color: #ffffff;
 }
 
 .contacto {
-  background-color: rgb(75, 131, 216);
+  background-color: #4b83d8;
   padding: 6px 20px;
   border: none;
   border-radius: 50px;
@@ -73,12 +74,12 @@ header {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: #fff;
+  color: #000;
 }
 
 .contacto:hover {
-  color: rgb(75, 131, 216);
-  background-color: #333;
+  color: #4b83d8;
+  background-color: #000;
 }
 
 /* contenido */
@@ -88,16 +89,10 @@ header {
 #inicio {
   place-items: center;
   display: flex;
-  background: rgb(39, 47, 59);
+  background: #7998c7;
   justify-content: center;
   height: 100vh;
 }
-
-#inicio img {
-  height: 300px;
-  padding: 50px;
-}
-
 .texto {
   align-content: center;
   display: grid;
@@ -105,8 +100,8 @@ header {
 }
 .jpch1 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  color: rgb(75, 131, 216);
+  font-weight: 800;
+  color: rgb(0, 0, 0);
   font-size: 3.5rem;
 }
 
@@ -120,7 +115,7 @@ header {
 .texto div {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: #fff;
+  color: #17263d;
   font-size: 20px;
 }
 
@@ -163,9 +158,15 @@ header {
   }
 }
 
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(1px);
+}
+
 /* servicios */
 #servicios {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,26 +191,34 @@ header {
 }
 
 .s-div {
-  background-color: #444;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 350px;
+  border: 3px solid #000;
 }
 
 .s-div h3 {
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
+  color: #000;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 10px;
 }
 
 .s-div p {
-  color: #ccc;
+  color: #000;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   padding: 10px 20px;
+}
+
+/* proyectos */
+
+#proyectos {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(#eee, #aaa);
 }
