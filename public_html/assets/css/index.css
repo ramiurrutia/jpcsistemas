@@ -91,7 +91,7 @@ header {
   display: flex;
   background: #7998c7;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
 }
 .texto {
   align-content: center;
@@ -160,9 +160,8 @@ header {
 
 .wave {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  transform: translateY(1px);
+  width: 100vw;
+  bottom: calc(100vh - 83vh);
 }
 
 /* servicios */
