@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 10%;
-  background: linear-gradient(#0000001e, #00000000);
+  background: linear-gradient(#00000010, #00000002);
   position: fixed;
   width: calc(100% - 20%);
   z-index: 1000;
@@ -30,7 +30,7 @@ header {
 .logo {
   cursor: pointer;
   width: 80px;
-  transition: 0.20s ease-in all 0s;
+  transition: 0.2s ease-in all 0s;
 }
 
 .logo:hover {
@@ -41,7 +41,7 @@ header {
 .navlinks li,
 .navlinks a {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   color: #000;
   text-decoration: none;
@@ -72,7 +72,7 @@ header {
   cursor: pointer;
   transition: all 0.25s ease 0s;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   color: #000;
 }
@@ -91,7 +91,7 @@ header {
   display: flex;
   background: #7998c7;
   justify-content: center;
-  height: 80vh;
+  height: 99vh;
 }
 .texto {
   align-content: center;
@@ -161,7 +161,7 @@ header {
 .wave {
   position: absolute;
   width: 100vw;
-  bottom: calc(100vh - 83vh);
+  bottom: 0;
 }
 
 /* servicios */
@@ -173,8 +173,9 @@ header {
 }
 
 #servicios h2 {
+  font-weight: 800;
   font-size: 40px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #4b83d8;
   padding: 80px 0 0 0;
 }
@@ -182,11 +183,10 @@ header {
 .servicios-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, minmax(350px, auto));
+  grid-template-rows: repeat(2, minmax(auto, auto));
   gap: 20px;
-  padding: 50px 10%;
-  width: 100%;
-  max-width: 60vw;
+  padding: 50px 0;
+  max-width: 65vw;
 }
 
 .s-div {
@@ -196,11 +196,11 @@ header {
   align-items: center;
   justify-content: center;
   min-height: 350px;
-  border: 3px solid #000;
+  background-color: #ddd;
 }
 
 .s-div h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #000;
   font-size: 20px;
   font-weight: 700;
@@ -209,15 +209,101 @@ header {
 
 .s-div p {
   color: #000;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   padding: 10px 20px;
 }
 
-/* proyectos */
+/* starlink */
 
-#proyectos {
+#starlink {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(#eee, #aaa);
+  background: linear-gradient(#eee, #ddd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#starlink img {
+  max-width: 400px;
+  min-width: 100px;
+  filter: drop-shadow(22px 8px 35px #0000003b);
+}
+
+.starlink-cont {
+  max-width: 75vh;
+  min-width: 1vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 75px;
+}
+
+.starlink-cont h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.starlink-cont button {
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background-color: #7998c7;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.starlink-cont button:hover {
+  background-color: #17263d;
+}
+
+.starlink-cont a {
+  padding: 0 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.starlink-cont a:hover {
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.096);
+}
+
+.fa-solid {
+  padding: 0 10px;
+}
+
+.starlink-cont p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+/* info */
+
+#info {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(#eee, #ddd);
+}
+
+/* contacto */
+
+.wave2 {
+  transform: rotate(180deg);
+  position: absolute;
+  top: 0;
+}
+
+#contacto {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(121,152,199);
+  background: linear-gradient(0deg, rgba(121,152,199,1) 0%, rgba(186,201,222,1) 66%, rgba(221,221,221,1) 100%);
 }
