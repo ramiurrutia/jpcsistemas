@@ -17,7 +17,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 10%;
-  background: linear-gradient(#00000010, #00000002);
   position: fixed;
   width: calc(100% - 20%);
   z-index: 1000;
@@ -219,7 +218,7 @@ header {
 #starlink {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(#eee, #ddd);
+  background: linear-gradient(#eee, #ccc);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -255,6 +254,7 @@ header {
   font-weight: 600;
   font-size: 15px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .starlink-cont button:hover {
@@ -267,6 +267,7 @@ header {
   font-weight: 500;
   color: #333;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .starlink-cont a:hover {
@@ -275,7 +276,8 @@ header {
 }
 
 .fa-solid {
-  padding: 0 10px;
+  padding: 0 5px;
+  font-size: 13px;
 }
 
 .starlink-cont p {
@@ -290,7 +292,6 @@ header {
 #info {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(#eee, #ddd);
 }
 
 /* contacto */
@@ -304,6 +305,5 @@ header {
 #contacto {
   height: 100vh;
   width: 100vw;
-  background: rgb(121,152,199);
-  background: linear-gradient(0deg, rgba(121,152,199,1) 0%, rgba(186,201,222,1) 66%, rgba(221,221,221,1) 100%);
+  background: linear-gradient(#ccc, #bbb);
 }
